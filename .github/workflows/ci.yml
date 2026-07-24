@@ -19,3 +19,6 @@ jobs:
 
       - name: Build Application
         uses: ./mvnw clean package
+
+      - name: Build Docker Image
+        run: docker build -t ci-cd .
